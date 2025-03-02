@@ -19,7 +19,36 @@ public class Chatbuddy{
                 System.out.println("Chatbuddy:Glad to hear that,Need any help?");
             }else if (userInput.contains("yes")){
                System.out.println("Chatbuddy:what is it?");
-            }else if (userInput.contains("bye")){
+			}else if (userInput.contains("I want to perform calculations.")){
+               System.out.println("Chatbuddy:Yes, Select operation:");
+               System.out.println("1 - Addition");
+               System.out.println("2 - Subtraction");
+               System.out.println("3 - Multiplication");
+               System.out.println("4 - Division");
+			   
+			   int choice = scanner.nextInt();
+
+                    System.out.print("Enter first number: ");
+					double num1 = scanner.nextDouble();
+
+					System.out.print("Enter second number: ");
+					double num2 = scanner.nextDouble();
+					
+					scanner.nextLine();
+
+					if (choice == 1) {
+						System.out.println("Result: " + (num1 + num2));
+					} else if (choice == 2) {
+						System.out.println("Result: " + (num1 - num2));
+					} else if (choice == 3) {
+						System.out.println("Result: " + (num1 * num2));
+					} else if (choice == 4) {
+						System.out.println("Result: " + (num1 / num2));
+					} else {
+						System.out.println("Invalid choice");
+					}
+            
+			}else if (userInput.contains("bye")){
                System.out.println("Chatbuddy:Goodbye! have a nice day.");
 			}else if (userInput.contains("exit")){
                System.out.println("Chatbuddy:Chat ended. See you soon!");				
