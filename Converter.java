@@ -39,15 +39,15 @@ public class Converter{
                     result = value / 1000;
                     System.out.println(value + " grams = " + result + " kilograms");
                     break;
-			    case 4:
+		case 4:
                     result = value * 1000;
                     System.out.println(value + " kilograms = " + result + " grams");
                     break;
-				case 5:
+		case 5:
                     result = value / 60;
                     System.out.println(value + " minutes = " + result + " hours");
                     break;
-				case 6:
+		case 6:
                     result = value * 60;
                     System.out.println(value + " hours = " + result + " minutes");
                     break;
